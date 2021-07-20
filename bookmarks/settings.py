@@ -26,7 +26,7 @@ SECRET_KEY = 's5lg&pzvvc%n$d3j*p0p3z5w)+zl%_crhbsjowvd%d@y)uyi7x'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['testdjango.com', 'localhost', '127.0.0.1']
+ALLOWED_HOSTS = ['testdjango.com', 'localhost', '127.0.0.1', 'mysite.com']
 
 # Application definition
 
@@ -81,12 +81,12 @@ WSGI_APPLICATION = 'bookmarks.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
+        'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'django_by_example_social_website',
-        'USER': 'root',
-        'PASSWORD': '',
+        'USER': 'postgres',
+        'PASSWORD': '1234',
         'HOST': 'localhost',
-        'PORT': '3306',
+        'PORT': '5432',
     }
 }
 
